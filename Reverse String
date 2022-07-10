@@ -1,0 +1,13 @@
+s = ['h','e','l','l','o']
+s = ['h','a','n','n','a']
+
+# i = 0
+# j = -1
+
+for i in range(len(s)):
+  s[i], s[j] = s[j], s[i]
+  i += 1
+  j -= 1
+  if i == j:
+    break
+print(s)
