@@ -1,0 +1,22 @@
+# Approach:
+# 1. Sum up all zeroes
+# 2. Delete them
+# 3. Append them at the end
+
+nums = [0,1,0,3,12]
+nums = [0]
+nums = [0,0,1]
+
+z_tot = 0
+for i,v in enumerate(nums):
+  if nums[i] == 0:
+    z_tot = z_tot + 1
+
+while (nums.count(0)):
+  nums.remove(0)
+
+while z_tot > 0:
+  nums.append(0)
+  z_tot = z_tot - 1
+
+print(nums)
