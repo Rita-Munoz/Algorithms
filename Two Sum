@@ -1,0 +1,15 @@
+# O(n) time
+# O(n) space
+
+target = 9
+nums = [2,7,11,15]
+
+prevs = dict() #to keep a record of all values and indexes seen so far
+
+for i,n in enumerate(nums):
+  x = target - n
+  if x in prevs:
+    print([prevs[x], i]]) # the second pair of square brackets are to comply with the outcome format in leetcode
+  else:
+    prevs[n] = i
+return
