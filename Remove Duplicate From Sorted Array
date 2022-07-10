@@ -1,0 +1,10 @@
+nums = [1,1,2]
+n = len(nums)
+if n == 0:
+  print(0)
+
+index_num = 1 #as we start from the second element
+for num in nums:
+  if num != nums[index_num - 1]:
+    index_num += 1
+print(index_num)
