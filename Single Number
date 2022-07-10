@@ -1,0 +1,19 @@
+nums = [2,2,1] --> Output: 1
+nums = [4,1,2,1,2] --> Output: 4
+nums = [1] --> Output: 1
+
+count = dict()
+for num in nums:
+  if num not in count:
+    count[num] = 1
+  else:
+    count[num] += 1
+
+# There are two options to get the same outcome
+# Option 1:
+num_min = min(count.items(), key=lambda x: x[1])
+print(num_min)
+
+# Option 2:
+num_min = min(count, key=count.get)
+print(num_min)
