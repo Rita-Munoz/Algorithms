@@ -1,0 +1,15 @@
+nums = [1,2,3,1] --> True
+nums = [1,2,3,4] --> False
+
+prevs = dict()
+for i,v in enumerate(nums):
+  if v in prevs:
+    print(true)
+  else:
+    prevs[v] = i
+
+if len(nums) == len(prevs):
+  print(false)
+
+
+    
