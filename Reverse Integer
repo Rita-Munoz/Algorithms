@@ -1,0 +1,19 @@
+# Works when x = positive
+
+x = 123
+reverse_x = 0
+while x > 0:
+  remainder = x % 10
+  reverse_x = (reverse_x * 10) + remainder
+  x = x // 10
+print(reverse_x)
+
+________________________________________________
+
+# Works despite the sign of x
+
+x = -123
+x = str(x)
+if x[0] == '-':
+  a = int('-' + x[-1:0:-1])
+print(a)
