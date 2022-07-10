@@ -1,0 +1,13 @@
+# O(n) Time
+# O(1) Space
+
+prices = list()
+
+profit_total = 0
+
+for i,v in enumerate(prices):
+  if i == 0:
+    continue
+  if prices[i] > prices[i - 1]:
+    profit_total += prices[i] - prices[i - 1]
+print(profit_total)
