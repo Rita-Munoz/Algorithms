@@ -1,0 +1,12 @@
+digits = [1,2,3] --> Output: [1,2,4]
+digits = [9] --> Output: [1,0]
+
+if digits[-1] == 9:
+  digits[-1] = digits[-1] + 1                   # we add up 1
+  digits = "".join([str(_) for _ in digits])    # convert to string
+  digits.split("_")                             # we split the string and it now looks like this ["1", "0"]
+  digits = [int(e) for e in digits]             # we convert back the str to integer
+  print(digits)
+else:
+  digits[-1] = digits[-1] + 1
+  print(digits)
